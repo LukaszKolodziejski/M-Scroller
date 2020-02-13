@@ -1,0 +1,32 @@
+.scroller__navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroller__navigation ul {
+  list-style: none;
+}
+
+.scroller__navigation ul li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgb(4, 126, 14);
+  background-color: rgb(58, 218, 18);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.scroller__navigation ul li + li {
+  margin-top: 10px;
+}
+
+.scroller__navigation ul li.active {
+  border: 2px solid rgb(4, 82, 10);
+  background-color: rgb(55, 233, 10);
+  opacity: 1;
+  transition: 1s;
+}
