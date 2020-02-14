@@ -13,11 +13,8 @@ class Swiper {
   }
   startTouch = e => {
     e.preventDefault();
-    console.log(e);
     this.initialX = e.touches[0].clientX;
     this.initialY = e.touches[0].clientY;
-    console.log(this.initialY);
-    console.log(this.initialX);
   };
   moveTouch = e => {
     if (!this.initialX || !this.initialY) return;
@@ -25,8 +22,6 @@ class Swiper {
     const currentY = e.touches[0].clientY;
     const diffX = this.initialX - currentX;
     const diffY = this.initialY - currentY;
-    console.log(diffX);
-    console.log(diffY);
     if (Math.abs(diffX) > Math.abs(diffY)) {
       if (diffX > 0) {
         document.dispatchEvent(this.events.swipeLeft);
