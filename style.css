@@ -14,3 +14,7 @@ section p {
   margin: 16px auto;
   min-width: 75%;
 }
+
+img {
+  min-width: 100%;
+}
